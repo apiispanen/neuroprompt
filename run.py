@@ -4,10 +4,16 @@ from server.backend import Backend_Api
 
 from json import load
 
+import os
+
 if __name__ == '__main__':
     config = load(open('config.json', 'r'))
     site_config = config['site_config']
     
+    # Assign a value to the port before using it
+    site_config['port'] = int(os.getenv('PORT', site_config.get('port', 5000)))
+
+    # Now the rest of your code...
     site = Website(app)
     for route in site.routes:
         app.add_url_rule(
