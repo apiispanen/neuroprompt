@@ -59,6 +59,7 @@ class Backend_Api:
 
             proxies = None
             if self.proxy['enable']:
+                print('using proxy')
                 proxies = {
                     'http': self.proxy['http'],
                     'https': self.proxy['https'],
