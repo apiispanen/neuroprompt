@@ -1,7 +1,7 @@
 {
     "site_config": {
         "host" : "0.0.0.0",
-        "port" : 1338,
+        "port" : 5000,
         "debug": false
     },
     "openai_key": "sk-...",
@@ -9,7 +9,8 @@
     "openai_api_base": "https://api.openai.com",
     "proxy": {
         "enable": true,
-        "http": "127.0.0.1:7890",
+        "http": "0.0.0.0:5000",
         "https": "127.0.0.1:7890"
     }
 }
+// host='0.0.0.0', port=int(os.environ.get('PORT', 5000)
