@@ -31,5 +31,8 @@ if __name__ == '__main__':
         )
 
     print(f"Running on port {site_config['port']}")
-    app.run(**site_config, host='0.0.0.0')
+    app.run(**site_config)
     print(f"Closing port {site_config['port']}")
+    # Original config.json HTTP HTTPS:
+    # "http": "127.0.0.1:7890",
+    # "https": "127.0.0.1:7890"
