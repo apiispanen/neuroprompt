@@ -4,8 +4,6 @@
         "debug": false
     },
 
-    "openai_key": "sk-...",
-
     "openai_api_base": "https://api.openai.com",
     "proxy": {
         "enable": true,
