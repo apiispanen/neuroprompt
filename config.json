@@ -4,10 +4,12 @@
         "debug": false
     },
 
+    "openai_key": "sk-...",
+
     "openai_api_base": "https://api.openai.com",
     "proxy": {
         "enable": true,
-        "http": "0.0.0.0",
-        "https": "0.0.0.0"
+        "http": "127.0.0.1:7890",
+        "https": "127.0.0.1:7890"
     }
 }
